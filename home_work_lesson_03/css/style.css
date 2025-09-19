@@ -1,0 +1,41 @@
+@import url("reset.css");
+.title {
+	color: red;
+}
+.list .item {
+	color: blue;
+}
+#section-1,
+#section-2,
+#section-3,
+#section-4,
+#section-5 {
+	color: blueviolet;
+}
+.reason .text {
+	color: chocolate;
+}
+.occurrence .text {
+	color: chocolate;
+}
+.everyday-life p {
+	color: chartreuse;
+}
+.establishment * {
+	color: green;
+}
+.prince > p {
+	color: aqua;
+}
+h4 {
+	color: darkgoldenrod;
+}
+.conclusions a {
+	color: deeppink;
+}
+p.info {
+	color: lawngreen;
+}
+[class*="button"] {
+	color: brown;
+}
