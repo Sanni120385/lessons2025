@@ -12,6 +12,9 @@
 #section-5 {
 	color: blueviolet;
 }
+#section-1 + p {
+	color: chartreuse;
+}
 .reason .text {
 	color: chocolate;
 }
@@ -33,8 +36,8 @@ h4 {
 .conclusions a {
 	color: deeppink;
 }
-p.info {
-	color: lawngreen;
+#section-5 ~ p {
+	color: mediumvioletred;
 }
 [class*="button"] {
 	color: brown;
