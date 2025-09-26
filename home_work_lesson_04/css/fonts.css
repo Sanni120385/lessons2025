@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Praysir";
+	src: url("../fonts/Praysiredemo-yw52q.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-Light-BF63e1a1f700d0d.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-LightItalic-BF63e1a1f78d6be.woff2") format("woff2");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-Medium-BF63e1a1f80a325.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
