@@ -20,6 +20,8 @@ h1 {
 	text-decoration-color: blueviolet;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	text-decoration-thickness: 5px;
+	text-underline-offset: 5px;
 }
 .list {
 	margin-bottom: 20px;
@@ -108,7 +110,7 @@ h2 {
 .section4 h2 {
 	text-decoration: underline;
 	text-decoration-style: wavy;
-	text-decoration-color: rgb(215, 205, 14);
+	text-decoration-color: rgba(215, 205, 14, 0.338);
 }
 .section5 h2 {
 	text-decoration: underline;
