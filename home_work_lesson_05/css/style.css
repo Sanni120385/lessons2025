@@ -1,0 +1,159 @@
+@import url("reset.css");
+@import url("fonts.css");
+body {
+	font-family: "lato, sans-serif";
+}
+.button {
+	color: crimson;
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding-inline: 2rem;
+	
+}
+
+.container{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.header {
+	margin-bottom: 5.125rem;
+	
+}
+
+.header .container {
+	max-width: 100%;
+}
+
+.header__title {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2.75rem;
+	color: #000000;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	background-color: blanchedalmond;
+}
+
+
+.footer .container {
+	max-width: 100%;
+}
+
+.footer__title {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+	color: #000000;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	background-color: blanchedalmond;
+}
+.main{
+	margin-bottom: 5.125rem;
+}
+h2{
+			color: #2f302c;
+			font-size: 2rem;
+			font-style: normal;
+			font-family: "Lato", sans-serif;
+			font-weight: 800;
+			line-height: 2.5rem;
+			letter-spacing: 0;
+			text-transform: none;
+		text-align: center;
+		margin-bottom: 4.5rem;
+		}
+.top-cards {
+	font-size: 0;
+	margin-left: -34px;
+	margin-right: -34px;
+margin-bottom: 4.25rem;
+}
+
+.top-card {
+	display: inline-block;
+	width: 33.3333%;
+	padding-left: 34px;
+	padding-right: 34px;
+}
+
+
+
+.top-card__icon {
+	display: block;
+	margin: 0 auto 1.5rem;
+			width: 100%;
+			max-width:  3.75rem;
+}
+
+.top-card__title {
+	font-size: 1rem;
+	font-weight: 700;
+	font-style: normal;
+	font-family: "Lato", sans-serif;
+	line-height: 1.25rem;
+	letter-spacing: 0;
+		text-transform: none;
+		text-align: center;
+		margin-bottom: 1.5rem;
+}
+
+.top-card__text {
+		color: #7e7f7c;
+			font-size: 1rem;
+			font-style: normal;
+			font-family: "Lato", sans-serif;
+			font-weight: 500;
+			line-height: 1.25rem;
+			letter-spacing: 0;
+			text-transform: none;
+			text-align: center;
+}
+.bottom-cards {
+		font-size: 0;
+			margin-left: -34px;
+			margin-right: -34px;
+		
+}
+
+.bottom-card {
+	display: inline-block;
+		width: 33.3333%;
+		padding-left: 34px;
+		padding-right: 34px;
+}
+
+
+
+.bottom-card__icon {
+	display: block;
+		margin: 0 auto 1.5rem;
+		width: 100%;
+		max-width: 3.75rem;
+}
+
+.bottom-card__title {
+	font-size: 1rem;
+		font-weight: 700;
+		font-style: normal;
+		font-family: "Lato", sans-serif;
+		line-height: 1.25rem;
+		letter-spacing: 0;
+		text-transform: none;
+		text-align: center;
+		margin-bottom: 1.5rem;
+}
+
+.bottom-card__text {
+	color: #7e7f7c;
+		font-size: 1rem;
+		font-style: normal;
+		font-family: "Lato", sans-serif;
+		font-weight: 500;
+		line-height: 1.25rem;
+		letter-spacing: 0;
+		text-transform: none;
+		text-align: center;
+}

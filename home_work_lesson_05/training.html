@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="training.css">
+	<title>Home work lesson 05 training</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="button"><a href="index.html">Page #1</a></div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="content">
+				<h1 class="title">CSS block properties</h1>
+				<div class="padding">
+					<h2>padding</h2>
+					<p class="text">Властивість padding — це внутрішній відступ. Використовується для відступів від кордону
+						блоку всередину блоку
+						(елементу), а не між блоками (елементами). Значення можуть бути лише додатними, тобто більше або рівне
+						нулю.<br>
+						Простими словами padding — це Відступи ВСЕРЕДИНІ об'єкту, від кордонів об'єкта ДО ЙОГО КОНТЕНТУ. НЕ
+						успадковується.<br>
+						При вказанні значення у відсотках, відсоток береться від ширини батьківського об'єкта,
+						навіть для вертикальних
+						відступів.
+					</p>
+				</div>
+				<div class="margin">
+					<h2>margin</h2>
+					<p class="text">
+						Властивість margin — Зовнішній відступ. Використовується для відступів між блоками (елементами),
+						рекомендується робити
+						відступи зверху вниз (margin-bottom) зліва на право. Значення можуть бути від'ємними! НЕ
+						успадковується.<br>
+						Правило для відступів margin між елементами — відступи margin задаємо на одному рівні вкладеності.<br>
+						Не допускається відступ від дочірнього елементу до наступного батьківського, тобто відступ з 2-го
+						рівня вкладеності до
+						першого.
+					</p>
+				</div>
+				<div class="width">
+					<h2>width</h2>
+					<p class="text">
+						Властивість width — це ширина блоку (елементу). Значення можуть бути як у відсотках, так і у
+						пікселях. При вказанні
+						значення у відсотках, відсоток береться від ширини батьківського об'єкта. НЕ успадковується.НЕ працює
+						з рядковими об'єктами.<br>
+						Властивість `max-width` – встановлює **максимальну ширину** блочних (блочно-рядкових) тегів, тобто
+						блок не буде
+						більшим за вказану ширину. Не успадковується.
+						НЕ працює зі рядковими об'єктами.<br>
+						Властивість `min-width` — встановлює **мінімальну ширину** блочних (блочно-рядкових) тегів, тобто
+						блок не буде
+						меншим за вказану ширину. Не успадковується.
+						НЕ працює зі рядковими об'єктами.
+					</p>
+				</div>
+				<div class="height">
+					<h2>height</h2>
+					<p class="text">
+						Властивість `height` — встановлює чітку висоту блочних (блочно-рядкових) тегів. Не успадковується.
+						НЕ працює зі рядковими об'єктами.<br>
+						Властивість `min-height` — встановлює мінімальну висоту блочних (блочно-рядкових) тегів, тобто
+						блок не буде
+						меншим за вказану висоту. Не успадковується.
+						НЕ працює зі рядковими об'єктами.<br>
+						Властивість `max-height` — встановлює максимальну висоту блочних (блочно-рядкових) тегів, тобто блок
+						не буде
+						більшим за вказану висоту. Не успадковується.
+						НЕ працює зі рядковими об'єктами.
+					</p>
+				</div>
+				<div class="box-sizing">
+					<h2>box-sizing</h2>
+					<p class="text">
+						Застосовується для зміни алгоритму обчислення величин.
+
+						Значення властивості:
+
+						- content-box - (за замовченням) додає відступи до розміру об'єкта;
+						- border-box - значення розмірів враховують відступи.<br>
+						ВАЖЛИВО! Видалення фантомних відступів між елементами.
+
+						Для батьківського елементу вказуємо font-size: 0; це прибере фантомний відступ між елементами яким
+						вказано
+						display: inline-block; а для дочірніх елементів потрібно вказати відповідний розмір шрифту, приклад
+						font-size:
+						16px;
+					</p>
+				</div>
+				<div class="display">
+					<h2>display</h2>
+					<p class="text">
+						Властивість `display`— багатоцільова властивість яка задає глобальні параметри тегу, не
+						успадковується.
+
+						ВАЖЛИВО! Значення властивості:
+
+						- block — елемент відображається як блочний (встановлено за замовченням для блочних об'єктів);
+						- inline— елемент відображається як рядковий (встановлено за замовченням для рядкових об'єктів);
+						- inline-block — елемент відображається як рядковий, але з можливістю використання усіх
+						CSS-властивостей
+						(блочно-рядковий);
+
+						- none — елемент не виводиться в браузер. Інші елементи займають його місце. Не бере участь в
+						обробці
+						браузером.
+
+					</p>
+				</div>
+				<div class="overflow">
+					<h2>overflow</h2>
+					<p class="text">
+						Властивість `overflow` — керує відображенням контенту блочного елементу. Не успадковується.
+
+						ВАЖЛИВО! Значення властивості:
+
+						- visible — відображається увесь контент елемента, навіть за межами встановлених розмірів (за
+						замовченням);
+						- hidden — відображається тільки контент всередині (блоку) елемента, все інше буде сховано;
+						- scroll — завжди додаються смужки прокрутки;
+						- auto — смужки прокрутки додаються лише за необхідністю (якщо контент не вміщується всередині
+						вказаних розмірів
+						блоку).
+					</p>
+					<p class="text2">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam perferendis tempore facilis
+						nisi eius deleniti asperiores animi quaerat quo, veniam suscipit! Sint saepe error numquam facere
+						inventore nemo non?
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut earum dolores a delectus repellat
+						necessitatibus soluta eum dolor quae ducimus, ipsam dolorum tenetur fugit similique. Iure eius maxime
+						voluptates! Doloremque.
+					</p>
+					<p class="text3">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae enim tempore esse. Possimus et
+						rerum aliquid, asperiores corporis dolor officia obcaecati inventore quisquam accusantium? Ad fugit
+						optio dolor dolorum voluptate?
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil, nulla impedit architecto
+						accusantium consectetur voluptatem itaque consequuntur, dolore aliquid maxime a optio, tempore
+						voluptas pariatur? Dicta ullam animi tempora.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque magnam magni optio rerum blanditiis
+						placeat? Alias molestiae reprehenderit deleniti iure aut facilis cum libero, accusamus, magni officia
+						fuga odio labore.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam quaerat necessitatibus velit alias
+						at perferendis quasi minus, cupiditate dolorem rem nihil quo ab. Commodi, corporis facere? Officiis,
+						sequi vel.
+					</p>
+					<p class="text4">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil, nulla impedit architecto
+						accusantium consectetur voluptatem itaque consequuntur, dolore aliquid maxime a optio, tempore
+						voluptas pariatur? Dicta ullam animi tempora.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut eveniet amet quibusdam alias
+						voluptatibus odio quae praesentium ab sunt, voluptatem repudiandae distinctio! Corrupti corporis
+						blanditiis a. Cumque, consequatur doloremque.
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis est, velit, dolore quas
+						laboriosam dicta libero asperiores a voluptate explicabo reprehenderit facere inventore aut ratione
+						totam in, deleniti provident ipsam!
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laboriosam a facilis ullam
+						corrupti veritatis eum quo fuga atque eligendi earum, repudiandae nam doloribus ex voluptatum amet
+						temporibus quae libero.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati laboriosam fugiat nesciunt
+						expedita repudiandae nostrum perferendis nulla consequatur itaque culpa tenetur unde vero, excepturi
+						esse ea deleniti inventore suscipit?
+					</p>
+				</div>
+				<div class="vertical-align">
+					<h2>vertical-align</h2>
+					<p class="text">
+						Властивість `vertical-align` — керує вирівнюванням блочно-рядкових та рядкових елементів по вертикалі
+						(осі - Y).<br> Не успадковується.
+
+						- top — вирівнює по верхньому краю
+						- middle — вирівнює по центру
+						- bottom — вирівнює по нижньому краю
+						- також можна задати значення у пікселях.
+					</p>
+
+					<img src="img/email.svg" alt="#">
+					<span class="text2">
+						Lorem ipsum dolor sit amet.
+					</span>
+					<img src="img/credit-card.svg" alt="#">
+					<span class="text3">
+						Lorem ipsum dolor sit amet.
+					</span>
+					<img src="img/phone.svg" alt="#">
+					<span class="text4">
+						Lorem ipsum dolor sit amet.
+					</span>
+				</div>
+				<div class="centering">
+					<h2>Центрування блоку</h2>
+					<p class="text">- Об'єкт має бути блочним<br>
+						- Об'єкт має мати меншу ширину за батьківський елемент<br>
+						- Додаємо властивість `margin: 0 auto;`</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+
+	</footer>
+</body>
+
+</html>
