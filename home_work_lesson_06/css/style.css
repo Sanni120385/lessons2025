@@ -1,0 +1,199 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+.button {
+	color: crimson;
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding-inline: 2rem;
+	
+}
+.header {
+	margin-bottom: 5.125rem;
+	
+}
+.main{
+	margin-bottom: 5.125rem;
+}
+.header .container {
+	max-width: 100%;
+}
+.header__title {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2.75rem;
+	color: #000000;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	background-color: blanchedalmond;
+}
+.footer .container {
+	max-width: 100%;
+}
+.footer__title {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+	color: #000000;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	background-color: blanchedalmond;
+}
+.container{
+max-width: 1395px;
+margin: 0 auto;
+}
+.logo{
+	margin-bottom: 3.75rem;
+}
+.hero {
+	background: url("../img/rectangle-1.png") no-repeat center / cover;
+	margin-bottom: 5.125rem;
+	padding: 7.125rem 0 6.875rem 0;
+	
+}
+.content{
+	margin-left: 52.8%;
+}
+.hero__title {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	line-height: 1.75rem;
+	letter-spacing: 0;
+	text-transform: none;
+	font-style: normal;
+	font-size: 1.25rem;
+	color: #2f302c;
+	margin-bottom: 1.25rem;
+}
+
+.hero__subtitle {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 6rem;
+	color: #2f302c;
+	
+	
+}
+
+.hero__subtitle2 {
+	font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		line-height: 6.25rem;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		font-style: normal;
+		font-size: 6rem;
+		color: #2f302c;
+		margin-bottom: 1rem;
+}
+
+.line {
+	max-width: 19.25rem;
+	height: 0.0625rem;
+background-color: #2f302c;
+margin-bottom: 2.25rem;
+}
+
+.hero__subtitle3 {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	line-height: 1.75rem;
+	letter-spacing: 0;
+	text-transform: none;
+	font-style: normal;
+	font-size: 1.25rem;
+	color: #2f302c;
+	margin-bottom: 1.25rem;
+}
+
+.text {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	line-height: 1.25rem;
+	letter-spacing: 0;
+	text-transform: none;
+	font-style: normal;
+	font-size: 1rem;
+	color: #7e7f7c;
+}
+.ready {
+	background-color: #394264;
+	min-height: 40.8rem;
+padding-top: 6.875rem;
+padding-bottom: 6.875rem;
+}
+
+.ready .content {
+	width: 100%;
+	margin: 0 auto;
+		
+}
+
+.ready .title {
+font-family: "Open Sans", sans-serif;
+font-weight: 800;
+line-height: 3.75rem;
+letter-spacing: 0;
+text-transform: none;
+font-style: normal;
+font-size: 3rem;
+color: #ffffff;
+text-align: center;
+margin-bottom: 1.5625rem;
+}
+
+.ready .text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	line-height: 1.25rem;
+	text-align: center;
+	font-style: normal;
+	font-size: 0.875rem;
+}
+.ready .content{
+	margin-bottom: 5.75rem;
+}
+
+.list {
+	background-color: #fff;
+	max-width: 21.875rem;
+	padding: 2.5rem;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	
+}
+
+.item {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	line-height: 1.5rem;
+	font-style: normal;
+	font-size: 0.875rem;
+	color: #252b42;
+	margin-bottom: 0.875rem;
+	background: url("../img/check-badge-color.png") 0 0 no-repeat;
+	min-height: 2rem;
+	padding-left: 2.625rem;
+	
+}
+
+.item-gray {
+font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	line-height: 1.5rem;
+	font-style: normal;
+	font-size: 0.875rem;
+	color: #252b42;
+	margin-bottom: 0.875rem;
+	background: url("../img/check-badge.png") 0 0 no-repeat;
+min-height: 2rem;
+	padding-left: 2.625rem;
+}

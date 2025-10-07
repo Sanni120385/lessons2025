@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="training.css">
+	<title>Home work lesson 06 training</title>
+</head>
+
+<body>
+	<header id="top" class="header">
+		<div class="button"><a href="index.html">Page #1</a></div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<h1 class="title">CSS-властивості оформлення блоків</h1>
+			<div class="border">
+				<p class="text">
+					Властивість <mark>border</mark> — встановлює товщину, стиль та колір межі (кордону) елемента. <mark>Не
+						успадковується</mark>.
+				</p>
+				<p class="solid">solid</p>
+				<p class="dotted">dotted</p>
+				<p class="dashed">dashed</p>
+				<p class="double">double</p>
+				<p class="mix">exemple border</p>
+			</div>
+			<div class="outline">
+				<h2 class="outline__title">Outline</h2>
+				<p class="text">Властивість <mark>outline</mark> — встановлює товщину, стиль та колір контуру елемента.
+					Властивість outline — встановлює товщину, стиль та колір обвідки навколо елемента (не впливає на
+					оточення).
+					<mark>Не успадковується</mark>.
+					Outline знаходиться навколо елементу (обводить ззовні елемент), в той час, як border знаходиться
+					всередині елементу та
+					окреслює його кордони.
+				</p>
+				<p class="outline__solid">solid</p>
+				<p class="outline__dotted">dotted</p>
+				<p class="outline__dashed">dashed</p>
+				<p class="outline__double">double</p>
+				<p class="outline__mix">exemple outline</p>
+			</div>
+			<div class="border-radius">
+				<h2 class="border-radius__title">Border-radius</h2>
+				<p class="text">Властивість <mark>border-radius</mark> — встановлює радіус скруглення кутів елемента.
+					<mark>Не успадковується</mark>.
+				</p>
+				<p class="border-radius__circle">Circle</p>
+			</div>
+			<div class="box-shadow">
+				<h2 class="box-shadow__title">Box-shadow</h2>
+				<p class="text">Властивість <mark>box-shadow</mark> — встановлює тінь елемента. <mark>Не
+						успадковується</mark>.
+					Вона може бути як і зовні об’єкту, так і всередині
+				</p>
+
+			</div>
+			<div class="opacity">
+				<h2 class="opacity__title">Opacity</h2>
+				<p class="text">Властивість <mark>opacity</mark> — встановлює прозорість елемента. <mark>Не
+						успадковується</mark>.
+					Значення від 0 до 1
+				</p>
+				<p class="text1">0 — повна прозорість</p>
+				<p class="text2">1 — повна непрозорість (за замовченням)</p>
+				<p class="text3">0.5 — прозорість 50%.</p>
+			</div>
+			<div class="visibility">
+				<h2 class="visibility__title">Visibility</h2>
+				<p class="text">Властивість <mark>visibility</mark> — встановлює видимість елемента. <mark>Не
+						успадковується</mark>.
+					Елемент з властивістю visibility: hidden; не буде видно, але він займатиме місце на сторінці.
+				</p>
+				<p class="text">visible</p>
+				<p class="text1">hidden</p>
+			</div>
+			<div class="background">
+				<h2 class="background__title">background</h2>
+				<h3 class="background__subtitle">Дозволяє одночасно задати кілька параметрів фону:</h3>
+				<ul class="list">
+					<li class="item">
+						<a href="#section-1">визначити колір;</a>
+					</li>
+					<li class="item">
+						<a href="#section-2">встановити фонове зображення;</a>
+					</li>
+					<li class="item">
+						<a href="#section-3">задати початкове положення фонового зображення;</a>
+					</li>
+					<li class="item">
+						<a href="#section-4">визначити як повторюватиметься фонове зображення;</a>
+					</li>
+					<li class="item">
+						<a href="#section-5">встановити, чи прокручуватиметься фонове зображення разом із вмістом;</a>
+					</li>
+					<li class="item">
+						<a href="#section-6">масштабувати фонове зображення відповідно до заданих розмірів;</a>
+					</li>
+					<li class="item">
+						<a href="#section-7">вказати градієнтну заливку фону.</a>
+					</li>
+				</ul>
+				<p id="section-1" class="text">Властивість <mark>background-color</mark> встановлює колір фону елемента</p>
+				<p id="section-2" class="text1">Властивість <mark>background-image</mark> встановлює фонове зображення
+					елемента<br>
+					background-image: url("../img/ .jpg");<br>
+					background-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); </p>
+				<p id="section-3" class="text2">Властивість <mark>background-position</mark> встановлює початкове положення
+					фонового зображення.
+					background-position: 0 0; перше значення — розташування по горизонталі (значення може бути у відсотках,
+					px,
+					словом), друге значення — по вертикалі.
+
+					Значення:<br>
+
+					- 0 0 (або left top) — за замовченням (зображення буде починатись з верхнього лівого кута блоку);
+					- center (або 50%) — центрує зображення посередині блоку;
+					- top;
+					- left;
+					- bottom;
+					- right.
+
+					Якщо задано значення лише для горизонталі чи лише по вертикалі то друге значення за замочуванням буде
+					center
+				</p>
+				<p id="section-4" class="text3">Властивість <mark>background-repeat</mark> визначає, як повторюватиметься
+					фонове зображення.
+					Значення:<br>
+
+					- repeat — за замовчуванням (зображення буде повторюватись по горизонталі та вертикалі);
+					- no-repeat — зображення не буде повторюватись;
+					- repeat-x — зображення буде повторюватись лише по горизонталі;
+					- repeat-y — зображення буде повторюватись лише по вертикалі;
+					- space — зображення буде повторюватись, але між ними не буде проміжків, а порожні ділянки будуть
+					розподілені рівномірно;
+					- round — зображення буде повторюватись, але розмір зображень буде змінено так, щоб вони повністю
+					заповнили
+					блок без обрізання та проміжків.</p>
+				<p id="section-5" class="text4">Властивість <mark>background-attachment</mark> встановлює, чи
+					прокручуватиметься
+					фонове зображення разом із вмістом.
+					Значення:<br>
+
+					- scroll — за замовчуванням (фонове зображення прокручуватиметься разом із вмістом);
+					- fixed — фонове зображення залишатиметься на місці, а вміст буде прокручуватись поверх нього;
+					- local — фонове зображення прокручуватиметься разом із вмістом елемента, якщо у нього є власна
+					прокрутка
+				</p>
+				<p id="section-6" class="text5">Властивість <mark>background-size</mark> встановлює розмір фонового
+					зображення.
+					Значення:<br>
+
+					- auto — за замовчуванням (оригінальний розмір зображення);
+					- cover — масштабування зображення так, щоб воно повністю покривало блок (може обрізатись);
+					- contain — масштабування зображення так, щоб воно повністю помістилось у блок (можуть залишитись
+					порожні ділянки);
+					- width height — можна задати конкретні розміри у px, %, em тощо. Якщо вказано лише одне значення,
+					друге буде auto.
+				</p>
+				<p id="section-7" class="text6">Універсальна властивість `background` (універсальний запис — скорочений
+					запис властивості) в більшості випадків
+					використовується для додавання фонового зображення, позиціювання його, розмір зображення та чи
+					повторюється
+					зображення.
+
+					Приклад запису ⬇️<br>
+
+					`background: green url("#") 0 0 / cover no-repeat scroll;`<br>
+
+					- `green` - фоновий колір<br>
+					- url("#")`- посилання на картинку<br>
+					- `0 0`- позиція картинки відносно блоку (числові чи словесні значення)<br>
+					- `/` - роздільник, він потрібен якщо вказується розмір для фонового зображення, без нього буде помилка в
+					записі<br>
+					- `cover` - розмір для картинки (окрім `cover` та `contain` можуть бути інші значення у
+					відсотках, пікселях
+					чи інших одиницях виміру)<br>
+					- `no-repeat` - вказує чи повторюється зображення<br>
+					- `scroll` - (**за замовчуванням**) вказує чи буде скролитись картинка разом з блоком</p>
+
+
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<a class="top" href="#top"> На початок</a>
+			<h4 class="footer__title">Produced in 2025</h4>
+		</div>
+	</footer>
+</body>
+
+</html>
