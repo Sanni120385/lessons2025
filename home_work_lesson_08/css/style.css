@@ -1,0 +1,56 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+body{
+	background-color: #CECECE;
+	font-family: 'Montserrat', sans-serif;
+}
+.header {
+	background-color: cadetblue;
+	padding: 1.25rem 0;
+	margin-bottom: 3.125rem;
+}
+.header__title {
+	font-size: 2.25rem;
+	color: white;
+	text-align: center;
+	font-weight: 800;
+}
+.footer {
+	background-color: cadetblue;
+	padding: 1.25rem 0;
+	
+}
+.footer__title {
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+}
+.main{
+	margin-bottom: 3.125rem;
+}
+.main .container{
+	max-width: 75rem;
+	margin: 0 auto;
+}
+.logo-block{
+	margin-bottom: 2.25rem;
+}
+span{
+	font-weight: 600;
+		font-size: 1.15rem;
+}
+.arrow-block{
+	margin-bottom: 2.25rem;
+}
+.background-block img{
+	max-width: 10.9375rem;
+	max-height: 21.875rem;
+}
+p{
+	font-weight: 600;
+		font-size: 1.15rem;
+		margin-bottom: 2.25rem;
+}
