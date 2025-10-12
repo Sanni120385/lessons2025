@@ -55,8 +55,9 @@ margin: 0 auto;
 	padding: 7.125rem 0 6.875rem 0;
 	
 }
-.content{
-	margin-left: 52.8%;
+.container .content{
+	max-width: 40.625rem;
+	margin-left: auto;
 }
 .hero__title {
 	font-family: "Lato", sans-serif;
@@ -79,11 +80,11 @@ margin: 0 auto;
 	font-style: normal;
 	font-size: 6rem;
 	color: #2f302c;
-	
+	margin-bottom: 1rem;
 	
 }
 
-.hero__subtitle2 {
+.hero__subtitle span {
 	font-family: "Montserrat", sans-serif;
 		font-weight: 700;
 		line-height: 6.25rem;
@@ -92,7 +93,7 @@ margin: 0 auto;
 		font-style: normal;
 		font-size: 6rem;
 		color: #2f302c;
-		margin-bottom: 1rem;
+		
 }
 
 .line {
@@ -114,7 +115,7 @@ margin-bottom: 2.25rem;
 	margin-bottom: 1.25rem;
 }
 
-.text {
+.content p {
 	font-family: "Lato", sans-serif;
 	font-weight: 500;
 	line-height: 1.25rem;
@@ -182,7 +183,7 @@ margin-bottom: 1.5625rem;
 	background: url("../img/check-badge-color.png") 0 0 no-repeat;
 	min-height: 2rem;
 	padding-left: 2.625rem;
-	
+	padding-top: 0.25rem;
 }
 
 .item-gray {
@@ -196,4 +197,5 @@ font-family: "Montserrat", sans-serif;
 	background: url("../img/check-badge.png") 0 0 no-repeat;
 min-height: 2rem;
 	padding-left: 2.625rem;
+	padding-top: 0.25rem;
 }
