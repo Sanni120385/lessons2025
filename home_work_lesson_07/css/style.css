@@ -1,0 +1,374 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+body{
+	font-family: Montserrat, sans-serif;
+}
+.header {
+	padding: 1.25rem 0;
+	background-color: cadetblue;
+}
+
+.header__title {
+	font-weight: 800;
+	font-size: 2.15rem;
+	text-align: center;
+}
+.footer {
+	padding: 1.25rem 0;
+		background-color: cadetblue;
+}
+
+.footer__title {
+	font-weight: 600;
+	text-align: center;
+	font-size: 1.25;
+}
+.main{
+	padding: 20px 20px;
+}
+.container{
+	max-width: 75rem;
+	margin: 0 auto;
+}
+.list{
+	max-width: 21.875rem;
+	padding: 2.8125rem;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	margin-bottom: 3.125rem;
+}
+.list__item{
+	color: #252b42;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+.list__item:not(:last-child){
+margin-bottom: 1.375rem;
+}
+.list__item::before{
+	content: "";
+	background-image: url("../img/check-badge-color.png");
+width: 2rem;
+height: 2rem;
+margin-right: 0.625rem;
+vertical-align: middle;
+}
+.game>*:hover+*,
+.game>*:hover {
+visibility: visible;
+}
+.game-1-1{
+	width: 90px;
+	height: 40px;
+}
+.game-1-2{
+	width: 20px;
+	height: 70px;
+	visibility: hidden;
+	background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+	margin-left: 70px;
+}
+.game-1-3{
+	width: 300px;
+		height: 20px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 70px;
+		margin-top: -20px;
+}
+.game-1-4{
+	width: 10px;
+		height: 70px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 360px;
+		margin-top: -20px;
+}
+.game-1-5{
+	width: 300px;
+		height: 15px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 360px;
+		margin-top: -15px;
+}
+.game-1-6{
+	width: 30px;
+		height: 200px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 630px;
+		margin-top: -15px;
+}
+.game-1-7{
+	width: 400px;
+		height: 15px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 260px;
+		margin-top: -15px;
+}
+.game-1-8{
+	width: 5px;
+		height: 70px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 260px;
+		margin-top: -70px;
+}
+.game-1-9{
+	width: 150px;
+		height: 20px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 110px;
+		margin-top: -70px;
+}
+.game-1-10{
+	width: 15px;
+		height: 400px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 110px;
+		margin-top: -20px;
+}
+.game-1-11{
+	width: 150px;
+		height: 10px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 110px;
+		margin-top: -10px;
+}
+.game-1-12{
+	width: 25px;
+		height: 70px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 235px;
+		margin-top: -70px;
+}
+.game-1-13{
+	width: 250px;
+		height: 20px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 235px;
+		margin-top: -70px;
+}
+.game-1-14{
+	width: 25px;
+		height: 70px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 460px;
+		margin-top: -20px;
+}
+.game-1-15{
+	width: 250px;
+		height: 20px;
+		visibility: hidden;
+		background: linear-gradient(90deg, rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+		margin-left: 485px;
+		margin-top: -20px;
+		text-align: center;
+}
+.game-1-16{
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 800;
+	font-size: 48px;
+	visibility: hidden;
+	color: red;
+text-transform: uppercase;
+		margin-top: -400px;
+}
+.planat{
+	width: 90px;
+margin-left: 715px;
+margin-top: -60px;
+}
+.game-title{
+	font-weight: 700;
+		font-size: 2.15rem;
+		text-align: center;
+		margin-bottom: 1.25rem;
+}
+.game{
+	width: 50rem;
+	height: 43.75rem;
+	background: url("../img/9655.webp") no-repeat;
+	background-size: cover;
+		background-attachment: fixed;
+	margin: 0 auto;
+	margin-bottom: 3.125rem;
+	box-shadow: 5px 5px 50px 5px #391400, inset 5px 5px 50px 5px #391400;
+}
+
+.container .hover{
+	margin-bottom: 1.875rem;
+}
+.container .hover1 {
+	margin-bottom: 1.875rem;
+}
+.hover {
+	min-width: 100px;
+	border: solid 2px black;
+	text-align: center;
+	padding: 10px 25px;
+	border-radius: 0.375rem;
+	font-weight: 600;
+}
+.hover:hover{
+	background-color: cadetblue;
+	color: white;
+}
+.hover:active{
+	color: brown;
+	border: dotted 2px black;
+}
+.visited{
+	min-width: 100px;
+		border: solid 2px black;
+		text-align: center;
+		padding: 10px 25px;
+		border-radius: 0.375rem;
+		font-weight: 600;
+		
+}
+.visited:visited{
+	color: cadetblue;
+}
+.hover1{
+	font-weight: 600;
+	
+}
+.hover1:hover{
+	text-decoration: underline;
+	color: blue;
+}
+p span:hover{
+	color: blue;
+}
+
+.text:hover span{
+	color: blue;
+}
+.focuse:focus{
+	outline: 2px solid red;
+}
+.focuse:focus-visible{
+	outline: 2px solid blue;
+	
+}
+.target{
+	width: 18.75rem;
+	height: 18.75rem;
+	background-color: brown;
+	border-radius: 1.5rem;
+	margin-bottom: 1.25rem;
+}
+.target:target{
+	background-color: blueviolet;
+}
+.child p:first-of-type{
+	color: brown;
+}
+.child p:last-of-type{
+	color: blueviolet;
+}
+.child p:nth-of-type(2){
+	color: chartreuse;
+}
+.nth p:nth-of-type(odd){
+	color: cornflowerblue;
+}
+.nth p:nth-of-type(even){
+	color: chocolate;
+}
+.nth2 p:nth-of-type(2n){
+	color: aquamarine;
+}
+.nth2 p:nth-of-type(2n+1) {
+	color: chartreuse;
+}
+span.not:not(not){
+	color: hotpink;
+}
+.has:has(.item){
+	color: aqua;
+}
+.block {
+	max-width: 18.75rem;
+	background-color: darkslategray;
+	padding: 0.9375rem;
+	margin-bottom: 1.25rem;
+}
+.block > * {
+	margin-bottom: 1rem;
+}
+.block__title {
+font-weight: 800;
+font-size: 1.5rem;
+color: brown;
+margin-bottom: 2.125rem;
+}
+
+.block__text {
+line-height: 1.3;
+}
+
+.block__button {
+	color: darkmagenta;
+	font-weight: 600;
+	border: 0.125rem solid black;
+	padding: 15px 20px;
+	border-radius: 0.5rem;
+}
+.block__button:hover{
+	background-color: blueviolet;
+	color: blue;
+}
+.block > *:last-child {
+	margin-bottom: 0;
+}
+.button-som{
+	max-width: 12.5rem;
+	border: 0.125rem solid black;
+	padding: 8px 20px;
+		border-radius: 0.5rem;
+		color: brown;
+		font-weight: 600;
+		text-align: center;
+		letter-spacing: 1.5px;
+		display: inline-block;
+		
+}
+.button-som:hover{
+	background-color: brown;
+	color: cadetblue;
+}
+.button-som::after{
+	content: "";
+	height: 0.125rem;
+	background-color: darkcyan;
+	width: 0;
+	display: block;
+	margin-top: 0.1875rem;
+	transition: width 0.8s;
+}
+.button-som:hover::after{
+	width: 60%;
+}
+.button-som::before{
+	content: "";
+	background: url("../img/check-badge-color.png") no-repeat;
+	width: 2.1875rem;
+	height: 2.1875rem;
+	margin-right: 0.3125rem;
+	vertical-align: middle;
+}
