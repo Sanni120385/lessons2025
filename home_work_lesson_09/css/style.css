@@ -1,0 +1,85 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+body{
+	font-family: "Lato, sans-sarif";
+}
+.header__container,
+.trusted__container,
+.designet__container{
+	max-width: 87rem;
+	margin: 0 auto;
+}
+.header--margin{
+	margin-top: 3.8125rem;
+	margin-bottom: 3.75rem;
+}
+.footer{
+	text-align: center;
+	padding: 20px 0;
+}
+.designet--margin{
+	margin-bottom: 10.25rem;
+}
+.gallery{
+	background: url("../img/rectangle-1.jpg") no-repeat center / cover;
+	padding: 7.125rem 0 6.875rem 0;
+	
+}
+.gallery--margin {
+	margin-bottom: 5.125rem;
+}
+.gallery__title {
+	font-family: "Lato", sans-serif;
+		font-weight: 700;
+		line-height: 1.75rem;
+		letter-spacing: 0;
+		text-transform: none;
+		font-style: normal;
+		font-size: 1.25rem;
+		color: #2f302c;
+		margin-bottom: 1.25rem;
+}
+
+.gallery__subtitle {
+	font-family: "Montserrat", sans-serif;
+		font-weight: 800;
+		line-height: 1;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		font-style: normal;
+		font-size: 6rem;
+		color: #2f302c;
+		margin-bottom: 1rem;
+}
+.gallery__subtitle span{
+	font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		line-height: 6.25rem;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		font-style: normal;
+		font-size: 6rem;
+		color: #2f302c;
+}
+.gallery__line {
+		max-width: 19.25rem;
+			height: 0.0625rem;
+			background-color: #2f302c;
+			margin-bottom: 2.25rem;
+}
+.gallery p{
+	font-family: "Lato", sans-serif;
+		font-weight: 500;
+		line-height: 1.25rem;
+		letter-spacing: 0;
+		text-transform: none;
+		font-style: normal;
+		font-size: 1rem;
+		color: #7e7f7c;
+}
+.gallery__container .gallery__content{
+	max-width: 40.625rem;
+		margin-left: auto;
+}
