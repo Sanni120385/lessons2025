@@ -22,15 +22,15 @@ body{
 .designet--margin{
 	margin-bottom: 10.25rem;
 }
-.gallery{
+.hero{
 	background: url("../img/rectangle-1.jpg") no-repeat center / cover;
 	padding: 7.125rem 0 6.875rem 0;
 	
 }
-.gallery--margin {
+.hero--margin {
 	margin-bottom: 5.125rem;
 }
-.gallery__title {
+.hero__title {
 	font-family: "Lato", sans-serif;
 		font-weight: 700;
 		line-height: 1.75rem;
@@ -41,8 +41,15 @@ body{
 		color: #2f302c;
 		margin-bottom: 1.25rem;
 }
-
-.gallery__subtitle {
+.hero__subtitle::after{
+	content: "";
+	width: 311px;
+	height: 1px;
+	background-color: #2f302c;
+	margin-top: 31px;
+	display: block;
+}
+.hero__subtitle {
 	font-family: "Montserrat", sans-serif;
 		font-weight: 800;
 		line-height: 1;
@@ -51,25 +58,19 @@ body{
 		font-style: normal;
 		font-size: 6rem;
 		color: #2f302c;
-		margin-bottom: 1rem;
+		margin-bottom: 36px;
 }
-.gallery__subtitle span{
+.hero__subtitle span{
 	font-family: "Montserrat", sans-serif;
 		font-weight: 700;
-		line-height: 6.25rem;
+		line-height: 1;
 		letter-spacing: 0;
 		text-transform: uppercase;
 		font-style: normal;
-		font-size: 6rem;
 		color: #2f302c;
+		
 }
-.gallery__line {
-		max-width: 19.25rem;
-			height: 0.0625rem;
-			background-color: #2f302c;
-			margin-bottom: 2.25rem;
-}
-.gallery p{
+.hero p{
 	font-family: "Lato", sans-serif;
 		font-weight: 500;
 		line-height: 1.25rem;
@@ -79,7 +80,7 @@ body{
 		font-size: 1rem;
 		color: #7e7f7c;
 }
-.gallery__container .gallery__content{
+.hero__container .hero__content{
 	max-width: 40.625rem;
 		margin-left: auto;
 }
