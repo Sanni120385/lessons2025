@@ -1,0 +1,241 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular);
+body{
+font-family: Montserrat, sans-serif;
+background-color: rgb(251, 230, 205);
+}
+.header__container{
+	max-width: 68.75rem;
+	margin: 0 auto;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: cadetblue;
+	padding: 1.25rem 0 1.25rem 0;
+	
+}
+.header--margin {
+	margin-bottom: 6.25rem;
+}
+.footer {
+	background-color: cadetblue;
+		padding: 1.25rem 0 1.25rem 0;
+		text-align: center;
+}
+.footer__title {
+	font-weight: 700;
+	font-size: 1.5rem;
+		line-height: 2.5rem;
+}
+.main--margin{
+	margin-bottom: 6.25rem;
+}
+.menu__list {
+	font-size: 0;
+}
+.menu__item {
+	display: inline-block;
+	position: relative;
+}
+.menu__item:not(:last-child) {
+	margin-right: 0.9375rem;
+}
+.menu__item:hover .menu__submenu{
+	opacity: 1;
+	visibility: visible;
+}
+.menu__link {
+	font-size: 1.125rem;
+	padding: 0.625rem;
+	border-radius: 0.625rem;
+	transition: all 0.3s;
+}
+.menu__link:hover{
+	background-color: darkolivegreen;
+	text-decoration: underline;
+	text-underline-offset: 0.3125rem;
+	text-decoration-thickness: 0.125rem;
+}
+.menu__submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: darkolivegreen;
+	padding: 0.9375rem;
+	border-radius: 0.625rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+}
+.submenu__item {
+	position: relative;
+	display: inline-block;
+}
+.submenu__item:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+.submenu__link {
+	font-size: 1rem;
+	
+}
+.submenu__link:hover {
+	text-decoration: underline;
+text-underline-offset: 0.125rem;
+}
+.submenu__thirdmenu {
+	position: absolute;
+	top: 0;
+	left: 5.875rem;
+		background-color: cadetblue;
+		padding: 0.9375rem;
+		border-radius: 10px;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s;
+}
+.submenu__item:hover .submenu__thirdmenu {
+	opacity: 1;
+	visibility: visible;
+}
+.thirdmenu__item:not(:last-child) {
+	margin-bottom: 0.625rem;
+}
+.thirdmenu__link {
+	font-size: 0.875rem;
+}
+.thirdmenu__link:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.125rem;
+}
+.check-badge {
+	max-width: 21.875rem;
+	background-color: white;
+	padding: 2.5rem;
+	margin: 0 auto;
+	border-radius: 0.5rem;
+}
+.check-badge__item {
+	position: relative;
+	padding-left: 2.625rem;
+	min-height: 1.875rem;
+color: #252b42;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.5rem;
+}
+.check-badge__item::before {
+	content: "";
+	background: url(../img/check-badge-color.png) 0 0 / 100% no-repeat;
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	top: -0.1875rem;
+	left: 0;
+}
+.check-badge__item:not(:last-child) {
+	margin-bottom: 1.375rem;
+}
+.check-badge--margin{
+	margin-bottom: 6.25rem;
+}
+.check-badge__item--black-white::before{
+content: "";
+background: url(../img/check-badge.png) 0 0 / 100% no-repeat;
+}
+.face {
+	background-color: white;
+	font-family: Playfair Display, serif;
+	font-weight: 400;
+	padding-top: 2.875rem;
+	padding-bottom: 4.125rem;
+}
+.face__container{
+	max-width: 62.5rem;
+	margin: 0 auto;
+}
+.face__title {
+	font-size: clamp(14px, 3vw, 20px);
+	text-align: center;
+	margin-bottom: 3.3125rem;
+}
+.face__cards{
+	margin-bottom: 4.875rem;
+	font-size: 0;
+}
+.card {
+	position: relative;
+	display: inline-block;
+}
+.card__title {
+	color: white;
+	font-size: clamp(14px, 5vw, 28px);
+position: absolute;
+top: 8.3125rem;
+left: 3.9375rem;
+right: 4rem;
+}
+.card__title--left{
+	left: 3.1875rem;
+	right: 3.0625rem;
+}
+.card__title--right{
+	left: 5.375rem;
+	right: 5.375rem;
+}
+.card__link {
+	color: #fff;
+	font-size: 1.0625rem;
+	position: absolute;
+	left: 6.5625rem;
+	right: 53.4375rem;
+	bottom: 1rem;
+}
+.card__link:hover{
+	text-decoration: underline;
+	text-underline-offset: 0.125rem;
+	text-decoration-thickness: 0.125rem;
+}
+.face__card:not(:last-child){
+	margin-right: 7.6875rem;
+}
+.face__link {
+	max-width: 8.3125rem;
+	padding: 0.5625rem 3.125rem 0.5625rem 3.125rem;
+	border: 1px solid black;
+	font-size: 0.875rem;
+	color: #000;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+.face__link:hover{
+	background-color: #000;
+	color: white;
+	transition: all 0.3s;
+}
+.face::after{
+	content: "";
+	width: 62.5rem;
+	height: 0.0625rem;
+	background-color: #000;
+	display: block;
+	margin: 0 auto;
+	margin-top: 4.125rem;
+}
+.face::before {
+	content: "";
+	width: 62.5rem;
+	height: 0.0625rem;
+	background-color: #000;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 2.875rem;
+}
