@@ -926,29 +926,8 @@ position: absolute;
 	left: 760px;
 	border-radius: 15px;
 }
-.car__dimensions:hover {
+[class*="__dimensions"]:hover{
 	box-shadow: 0 0 7px 7px coral;
-}
-.car__dimensions2:hover {
-	box-shadow: 0 0 7px 7px coral;
-}
-.car__dimensions3:hover {
-	box-shadow: 0 0 7px 7px coral;
-}
-.car__dimensions4:hover {
-	box-shadow: 0 0 7px 7px coral;
-}
-.car__dimensions5:hover {
-	box-shadow: 0 0 7px 7px coral;
-}
-.car__dimensions6:hover {
-	box-shadow: 0 0 7px 7px coral;
-}
-.car__dimensions7:hover {
-	box-shadow: 0 0 7px 7px coral;
-}
-.car__dimensions8:hover{
-box-shadow: 0 0 7px 7px coral;
 }
 .car__lantern2 {
 	width: 5px;
