@@ -178,27 +178,24 @@ background: url(../img/check-badge.png) 0 0 / 100% no-repeat;
 	box-shadow: 0px 0px 5px 5px gray;
 }
 .card__title {
+	width: 100%;
+	text-align: center;
+	padding: 0 0.9375rem;
 	color: white;
 	font-size: clamp(14px, 5vw, 28px);
 position: absolute;
-top: 8.3125rem;
-left: 3.9375rem;
-right: 4rem;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
-.card__title--left{
-	left: 3.1875rem;
-	right: 3.0625rem;
-}
-.card__title--right{
-	left: 5.375rem;
-	right: 5.375rem;
-}
+
 .card__link {
+	width: 100%;
+		text-align: center;
+		padding: 0 0.9375rem;
 	color: #fff;
 	font-size: 1.0625rem;
 	position: absolute;
-	left: 6.5625rem;
-	right: 53.4375rem;
 	bottom: 1rem;
 }
 .card__link:hover{
