@@ -1,0 +1,231 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,800);
+body{
+	font-family: Lato, sans-serif;
+	
+}
+.footer__title {
+	font-weight: 700;
+	line-height: 150%;
+	font-size: clamp(1rem, 2.5vw, 1.875rem);
+	color: black;
+	text-align: center;
+	padding-block: 1.25rem;
+}
+.header{
+	padding-block: 3.75rem;
+	
+}
+.header__container{
+	display: flex;
+	column-gap: 5rem;
+	align-items: center;
+	row-gap: 2.5rem;
+	max-width: 88.875rem;
+		margin: 0 auto;
+		padding-inline: 0.9375rem;
+}
+.blok-input-header__input{
+	padding-block: 0.9375rem;
+	font-weight: 500;
+	line-height: 125%;
+	font-size: 1rem;
+	color: #7e7f7c;
+	border-bottom: 1px solid #7e7f7c;
+	max-width: 16.5rem;
+	padding-left: 2rem;
+}
+.blok-input-header__input:focus{
+	outline: none;
+}
+.blok-input-header{
+	position: relative;
+}
+.blok-input-header__logo{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/search.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.header__list {
+	display: flex;
+		column-gap: 2.75rem;
+		
+		
+	
+}
+.header__link {
+	color: #2f302c;
+	font-weight: 700;
+	font-size: clamp(0.75rem, 1.25vw, 1rem);
+	line-height: 1.25rem;
+	text-transform: uppercase;
+}
+.header__link::after{
+	content: "";
+		height: 0.125rem;
+		background-color: black;
+		width: 0;
+		display: block;
+		margin-top: 0.625rem;
+		transition: width 0.8s;
+}
+.header__link:hover::after {
+	width: 100%;
+}
+.header__selected {
+	display: flex;
+	justify-content: end;
+	column-gap: 2.9375rem;
+	flex: 1 1 21.5rem;
+}
+.selected-header__link {
+	font-weight: 700;
+	line-height: 1.25rem;
+	font-size: clamp(0.75rem, 1.25vw, 1rem);
+	color: #2f302c;
+	text-transform: uppercase;
+}
+.selected-header__link::after{
+	content: "";
+			height: 0.125rem;
+				background-color: black;
+				width: 0;
+				display: block;
+				margin-top: 0.625rem;
+				transition: width 0.8s;
+}
+.selected-header__link:hover::after {
+	width: 100%;
+}
+@media (max-width: 876px) {
+	.header {
+			padding-block: 1.875rem;
+	
+		}
+	.header__container{
+		flex-direction: column;
+		row-gap: 1.875rem;
+	}
+	.header__list {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 1.25rem;
+		column-gap: 1.875rem;
+	}
+	.header__selected {
+		justify-content: center;
+		flex-wrap: wrap;
+		row-gap: 1.25rem;
+		column-gap: 1.875rem;
+	}
+}
+@media (width <= 1120px) {
+.header__logo{
+	display: none;
+}
+.header__container{
+	justify-content: space-between;
+}
+.header__selected{
+		flex: 1 1 auto;
+		
+	}
+}
+
+@media (width <=876px) {
+	.header__logo {
+		display: block;
+	}
+}
+
+.hero {
+	background: url(../img/rectangle.jpg) no-repeat center/cover;
+	padding: 7.125rem 0 6.875rem 0;
+	min-height: 38.25rem;
+}
+.hero__content {
+	max-width: 680px;
+	margin-left: auto;
+	padding-inline: 15px;
+}
+
+.hero__title {
+	font-weight: 700;
+	line-height: 175%;
+	font-size: clamp(0.875rem, 6vw, 1.25rem);
+	color: #2f302c;
+	margin-bottom: 1.25rem;
+}
+
+.hero__subtitle {
+font-family: Montserrat, sans-serif;
+	font-weight: 800;
+	line-height: 6.25rem;
+	font-size: clamp(48px, 8vw, 96px);
+	color: #2f302c;
+	text-transform: uppercase;
+	margin-bottom: 2.25rem;
+}
+.hero__subtitle span{
+text-transform: uppercase;
+color: #2f302c;
+font-family: Montserrat, sans-serif;
+font-weight: 700;
+font-size: clamp(48px, 8vw, 96px);
+line-height: 1;
+
+}
+
+.hero__subtitle::after {
+	content: "";
+	display: block;
+	width: 313px;
+	height: 1px;
+	background-color: #2f302c;
+	margin-top: 1.9375rem;
+}
+
+.hero__subtitle-two {
+	font-weight: 700;
+	line-height: 175%;
+	font-size: clamp(0.875rem, 4vw, 1.25rem);
+	color: #2f302c;
+	margin-bottom: 1.25rem;
+}
+
+.hero__content p{
+font-weight: 500;
+line-height: 125%;
+font-size: clamp(0.75rem, 2.5vw, 1rem);
+color: #7e7f7c;
+}
+@media (max-width: 1040px) {
+	.hero {
+		padding: 4.375rem 0 3.125rem 0;
+		min-height: auto;
+	}
+	.hero__content {
+		max-width: 100%;
+		margin: 0;
+		padding: 0 1.25rem;
+		text-align: center;
+	}
+	.hero__subtitle {
+		line-height: 3.75rem;
+	}
+	.hero__subtitle::after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (max-width: 335px) {
+	.hero__content{
+		padding: 0 10px;
+	}
+}
