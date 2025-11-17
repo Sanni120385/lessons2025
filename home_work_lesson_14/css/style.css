@@ -127,7 +127,10 @@ body{
 	font-size: 1rem;
 	color: #7e7f7c;
 	text-align: center;
-	margin-bottom: 5.125rem;
+	
+}
+.main__block-title {
+margin-bottom: 5.125rem;
 }
 .hero {
 	display: flex;
@@ -141,6 +144,7 @@ body{
 	max-width: 44.5rem;
 	flex: 1 1 100%;
 }
+
 .form-hero__title {
 	font-weight: 800;
 	line-height: 2.5rem;
@@ -156,7 +160,9 @@ body{
 	font-size: 1rem;
 	color: #7e7f7c;
 }
-
+.form-hero__block{
+margin-bottom: 4.5rem;
+}
 .form-hero__link {
 	font-weight: 700;
 		line-height: 1.25rem;
@@ -164,7 +170,7 @@ body{
 		color: black;
 		text-decoration: underline;
 		text-underline-offset: 4px;
-		margin-bottom: 4.5rem;
+		
 }
 .form-hero__link:hover {
 	box-shadow: 0px 3px 0px 0px rgb(0, 0, 0);
