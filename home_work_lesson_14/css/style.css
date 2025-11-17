@@ -185,7 +185,9 @@ margin-bottom: 4.5rem;
 	column-gap: 2.5rem;
 	row-gap: 2.5rem;
 }
-
+.item-hero-form:last-child{
+	row-gap: 4.5rem;
+}
 
 .item-hero-form__input1 {
 	max-width: 21rem;
@@ -205,7 +207,7 @@ margin-bottom: 4.5rem;
 
 .item-hero-form__input5 {
 	max-width: 21rem;
-	margin-bottom: 72px;
+	
 }
 
 [class*="__input"]{
