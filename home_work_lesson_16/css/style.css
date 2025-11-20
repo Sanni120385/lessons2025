@@ -540,3 +540,8 @@ padding-block: 36px;
 		justify-content: center;
 	}
 }
+@media (width <=440px){
+	.info-footer{
+		text-align: center;
+	}
+}
