@@ -274,7 +274,8 @@ width: 0;
 }
 .main--margin{
 	margin-bottom: 100px;
-	background: url(../img/rectangle.webp) center  no-repeat;
+	/* background: url(../img/rectangle.webp) center no-repeat; */
+	background: url(../img/rectangle.webp) no-repeat center / cover;
 }
 .hero__background{
 	position: absolute;
