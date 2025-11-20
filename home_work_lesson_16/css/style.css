@@ -412,14 +412,14 @@ color: #7e7f7c;
 .info-footer__title {
 	font-weight: 800;
 	line-height: 1.75;
-	font-size: clamp(16px 2vw 20px);
+	font-size: clamp(16px, 2vw, 20px);
 	color: #2f302c;
 	margin-bottom: 28px;
 }
 .info-footer p{
 	font-weight: 500;
 	line-height: 1.25;
-	font-size: clamp(12px 1.5vw 16px);
+	font-size: clamp(12px, 1.5vw, 16px);
 	color: #7e7f7c;
 margin-bottom: 28px;
 }
