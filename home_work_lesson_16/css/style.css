@@ -267,14 +267,14 @@ width: 0;
 	border-bottom: 1px solid #040404;
 }
 
----------------------------------- Hero ----------------------------------
+/* ---------------------------------- Hero ---------------------------------- */
 
 .main{
 	position: relative;
 }
 .main--margin{
 	margin-bottom: 100px;
-	background: url(../img/rectangle.jpg) center  no-repeat;
+	background: url(../img/rectangle.webp) center  no-repeat;
 }
 .hero__background{
 	position: absolute;
@@ -384,7 +384,7 @@ color: #7e7f7c;
 				}
 }
 
--------------------------footer-----------------------------
+/* -------------------------footer----------------------------- */
 .footer__info{
 	display: flex;
 		column-gap: 120px;
