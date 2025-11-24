@@ -737,6 +737,8 @@ text-transform: uppercase;
 	grid-template-rows: repeat(2,1fr);
 	transition: all 0.3s;
 }
+
+
 .products__cards:has(:hover) .products__card:not(:hover) {
 	filter: grayscale(1) brightness(0.6);
 	transform: scale(0.95);
@@ -744,6 +746,7 @@ text-transform: uppercase;
 .products__card:hover {
 	transform: scale(1.05);
 }
+
 
 .card-products {
 	transition: all 0.3s;
