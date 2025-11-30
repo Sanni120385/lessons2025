@@ -258,7 +258,7 @@ line-height: 1.6875rem;
 font-size: 1.0625rem;
 color: #343434;
 margin-left: 4rem;
-text-wrap: no-wrap;
+
 }
 .link-hero__arrow{
 	vertical-align: middle;
@@ -379,7 +379,7 @@ text-wrap: no-wrap;
 		position: relative;
 		z-index: 1;
 		gap: 0;
-		flex-direction: none;
+		
 	}
 	.header--margin{
 		margin-bottom: 8.125rem;
@@ -541,7 +541,7 @@ margin-bottom: 8.125rem;
 .section-lessons__cards {
 	display: flex;
 	justify-content: space-between;
-	align-items: top;
+	
 	gap: 1.875rem;
 }
 .section-lessons__card:hover figcaption{
@@ -652,7 +652,7 @@ tr:not(:last-child) {
 	align-items: center;
 	gap: 3.125rem;
 }
-.content-schedule__table {
+table {
 	max-width: 41.125rem;
 }
 .content-schedule__image {
