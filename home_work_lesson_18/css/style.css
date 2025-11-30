@@ -826,6 +826,7 @@ flex-basis: 16.25rem;
 	color: #343434;
 	font-size: clamp(0.75rem, 2vw, 0.9375rem);
 	text-align: center;
+	display: block;
 }
 @media(width <=76.25rem){
 	.footer__container{

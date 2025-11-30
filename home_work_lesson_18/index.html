@@ -69,17 +69,16 @@
 						</a>
 					</div>
 					<picture class="hero__image">
-						<img src="img/image-1.jpg" alt="yoga"
-							srcset="image-1-1x.webp 1x, img/image-1-2x.webp 2x, img/image-1-3x.webp 3x" type="imag/webp">
-
+						<source srcset="image-1-1x.webp 1x, img/image-1-2x.webp 2x, img/image-1-3x.webp 3x" loading="lazy"
+							type="imag/webp">
+						<img src="img/image-1.jpg" alt="yoga">
 					</picture>
 				</section>
 				<section class="section-practice section-practice--margin">
 					<picture class="section-practice__image">
-						<img src="img/image-2.jpg" alt="yoga" loading="lazy"
-							srcset="image-2-1x.webp 1x, img/image-2-2x.webp 2x, img/image-2-3x.webp 3x" type="imag/webp"
-							loading="lazy">
-
+						<source srcset="img/image-2-1x.webp 1x, img/image-2-2x.webp 2x, img/image-2-3x.webp 3x"
+							type="imag/webp">
+						<img src="img/image-2.jpg" alt="yoga" loading="lazy">
 					</picture>
 					<div class="section-practice__content">
 						<h2 class="section-practice__title">Practice Anytime, Anywhere with our Online Classes</h2>
@@ -109,10 +108,10 @@
 						<a class="section-lessons__card" href="#">
 							<figure>
 								<picture>
-									<img src="img/rectangle-1.jpg" alt="yoga" loading="lazy"
+									<source
 										srcset="img/rectangle-1-1x.webp 1x, img/rectangle-1-2x.webp 2x, img/rectangle-1-3x.webp 3x"
-										type="imag/webp" loading="lazy">
-
+										type="imag/webp">
+									<img src="img/rectangle-1.jpg" alt="yoga" loading="lazy">
 								</picture>
 								<figcaption>Yoga For Beginner</figcaption>
 							</figure>
@@ -121,10 +120,10 @@
 						<a class="section-lessons__card" href="#">
 							<figure>
 								<picture>
-									<img src="img/rectangle-2.jpg" alt="yoga" loading="lazy"
+									<source
 										srcset="img/rectangle-2-1x.webp 1x, img/rectangle-2-2x.webp 2x, img/rectangle-2-3x.webp 3x"
-										type="imag/webp" loading="lazy">
-
+										type="imag/webp">
+									<img src="img/rectangle-2.jpg" alt="yoga" loading="lazy">
 								</picture>
 								<figcaption>Regular Practice</figcaption>
 							</figure>
@@ -133,10 +132,10 @@
 						<a class="section-lessons__card" href="#">
 							<figure>
 								<picture>
-									<img src="img/rectangle-3.jpg" alt="yoga" loading="lazy"
+									<source
 										srcset="img/rectangle-3-1x.webp 1x, img/rectangle-3-2x.webp 2x, img/rectangle-3-3x.webp 3x"
 										type="imag/webp" loading="lazy">
-
+									<img src="img/rectangle-3.jpg" alt="yoga" loading="lazy">
 								</picture>
 								<figcaption>Individual Practice</figcaption>
 							</figure>
@@ -198,9 +197,9 @@
 							</tbody>
 						</table>
 						<picture class="content-schedule__image">
-							<img src="img/rectangle-4-1x.jpg" alt="schedule" loading="lazy"
-								srcset="img/rectangle-4-2x.webp 2x, img/rectangle-4-3x.webp 3x" type="imag/webp" loading="lazy">
-
+							<source srcset="img/rectangle-4-2x.webp 2x, img/rectangle-4-3x.webp 3x" type="imag/webp"
+								loading="lazy">
+							<img src="img/rectangle-4-1x.jpg" alt="schedule" loading="lazy">
 						</picture>
 					</div>
 				</section>
@@ -239,7 +238,7 @@
 
 				<section class="footer__address address-footer">
 					<h3 class="address-footer__title">Address</h3>
-					<address>107th St, Inglewood, CA 90303,<br /> USA</address>
+					<address>107th St, Inglewood, CA 90303,<br> USA</address>
 					<address>
 						<a class="address-footer__link" href="tel:+123456789">+123 456 789</a>
 					</address>
@@ -258,7 +257,7 @@
 				</section>
 			</div>
 			<cite class="footer__cite">
-				<p>2023 ©Shanti Yoga Studio. All Rights Reserved.</p>
+				2023 ©Shanti Yoga Studio. All Rights Reserved.
 			</cite>
 		</footer>
 	</div>
