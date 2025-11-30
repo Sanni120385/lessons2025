@@ -45,6 +45,7 @@ body{
 .search-header__input {
 	height: 43px;
 	padding-inline: 0.9375rem;
+	flex-shrink: 0;
 }
 .header__menu {
 	flex-grow: 1;
@@ -284,9 +285,13 @@ width: 0;
 	object-fit: cover;
 	
 }
+.hero{
+	padding: 114px 15px 110px 15px;
+}
 .hero__content {
 	max-width: 680px;
-	padding: 114px 15px 110px 15px;
+	/* padding: 114px 15px 110px 15px; */
+	padding-inline: 15px;
 	margin-left: auto;
 	padding-inline: 15px;
 	position: relative;
@@ -304,8 +309,9 @@ width: 0;
 .hero__subtitle {
 font-family: Montserrat, sans-serif;
 	font-weight: 800;
-	line-height: 6.25rem;
-	font-size: clamp(48px, 8vw, 96px);
+	/* line-height: 100px; */
+	line-height: 1.2;
+	font-size: clamp(42px, 8vw, 96px);
 	color: #2f302c;
 	text-transform: uppercase;
 	margin-bottom: 2.25rem;
@@ -315,7 +321,7 @@ text-transform: uppercase;
 color: #2f302c;
 font-family: Montserrat, sans-serif;
 font-weight: 700;
-font-size: clamp(48px, 8vw, 96px);
+font-size: clamp(42px, 8vw, 96px);
 line-height: 1;
 
 }
@@ -344,7 +350,7 @@ font-size: clamp(0.75rem, 2.5vw, 1rem);
 color: #7e7f7c;
 }
 @media (width <= 1100px){
-.hero__content{
+.hero{
 	padding: 90px 15px 90px 15px;
 }
 .hero__title{
@@ -374,7 +380,7 @@ color: #7e7f7c;
 		}
 }
 @media (width <=768px){
-.hero__content {
+.hero {
 		padding: 45px 15px 45px 15px;
 	}
 		.main--margin {
@@ -417,14 +423,21 @@ color: #7e7f7c;
 	color: #2f302c;
 	margin-bottom: 28px;
 }
-.info-footer p{
+.info-footer a{
+	display: block;
 	font-weight: 500;
 	line-height: 1.25;
 	font-size: clamp(12px, 1.5vw, 16px);
 	color: #7e7f7c;
 margin-bottom: 28px;
 }
-.info-footer p:last-of-type{
+.info-footer a:hover{
+	color: #2f302c;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 6px;
+}
+.info-footer a:last-of-type{
 	margin-bottom: 0;
 }
 .info-footer__company {
@@ -454,7 +467,7 @@ margin-bottom: 28px;
 	.info-footer {
 		column-gap: 30px;
 	}
-	.info-footer p{
+	.info-footer a{
 		margin-bottom: 16px;
 	}
 	.info-footer__title{
@@ -483,7 +496,7 @@ margin-bottom: 28px;
 [class*="info-footer__"]{
 	flex-basis: 198px;
 }
-.info-footer p {
+.info-footer a {
 	margin-bottom: 10px;
 }
 
@@ -495,7 +508,7 @@ margin-bottom: 28px;
 	padding-block: 72px;
 	
 }
-.produced-footer__text p{
+.produced-footer__text a{
 	text-wrap: balance;
 	text-align: center;
 }
