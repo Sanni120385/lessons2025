@@ -1,0 +1,66 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular);
+body{
+	font-family: "Playfair Display", serif;
+	
+}
+.header{
+	background: url(../img/home.webp.webp) no-repeat;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+	padding-top: 1.4375rem;
+	height: 100vh;
+}
+
+.header--margin {}
+
+.header__container {}
+
+.header__menu {}
+
+.menu {
+	
+
+}
+.menu__leble{}
+
+.menu__container {
+	max-width: 60.1875rem;
+	padding-inline: 0.9375rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	margin-bottom: 7rem;
+}
+
+.menu__title {
+	font-size: 2.25rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.menu__list {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+
+}
+
+.menu__item {
+	font-size: 0.75rem;
+		color: #fff;
+}
+
+.menu__link {
+	display: block;
+	font-size: 0.75rem;
+	color: #fff;
+}
+
+.icon-menu {}
+
