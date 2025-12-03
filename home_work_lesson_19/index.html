@@ -7,54 +7,230 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="css/style.css">
-	<title>Home work lesson 18</title>
+	<title>Home work lesson 19</title>
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header header--margin">
 			<div class="header__container">
-
-				<nav class="header__menu menu">
-					<dov class="menu__container">
-						<a class="menu__leble" href="#">
-							<h1 class="menu__title">INFO BAO</h1>
-						</a>
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a class="menu__link" href="#">Home</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">About Us</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Blogs</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Cosmetics Info</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Contact</a>
-							</li>
-						</ul>
-					</dov>
-				</nav>
-				<button class="icon-menu" aria-label="open menu"><span></span></button>
+				<article class="header__cap-block">
+					<a class="header__logo" href="#">
+						<h1 class="header__title">INFO BAO</h1>
+					</a>
+					<nav class="header__menu menu">
+						<dov class="menu__container">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__link" href="#">Home</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">About Us</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Blogs</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Cosmetics Info</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Contact</a>
+								</li>
+							</ul>
+						</dov>
+					</nav>
+					<button class="icon-menu" aria-label="open menu"><span></span></button>
+				</article>
+				<section class="header__content content-header">
+					<div class="content-header__container">
+						<h2 class="content-header__title">About Cosmetics</h2>
+						<p>Learn more about other cosmetics with INFO BAO</p>
+						<a class="content-header__link" href="#">More information</a>
+					</div>
+				</section>
 			</div>
 		</header>
 
 		<main class="main main--margin">
 			<div class="main__container">
+				<section class="about about--margin">
+					<div class="about__container">
+						<h2 class="about__title">About Us</h2>
+						<article class="about__content content-about">
+							<article class="content-about__info">
+								<h3 class="content-about__title">Start new info</h3>
+								<p>When you want buy new cosmetics you need know about this cosmetics. This site help you find
+									cosmetics what you want. We
+									can help you to get acquainted with cosmetics. And you can find information about skin
+									problem
+									for teenager, adult and
+									elder woman.
+									We tell you about face skin cosmetics, hair cosmetics, cosmetics for makeup. We have got
+									three
+									sections: Korean
+									cosmetics, American cosmetics, Europian cosmetics.</p>
+								<p>We talk about brands: CHI(American hair cosmetics), Some by mi(Korean face cosmetics), La
+									Roche-Posay(French face
+									cosmetics) and other brands. We take cosmetics different price. Because not all can buy
+									expensive cosmetics but all
+									women want look beautiful. That's why we start this project! All women can buy cosmetics!</p>
+							</article>
+							<picture class="content-about__image">
+								<source srcset="img/about-home-1x.webp 1x, img/about-home-2x.webp 2x, img/about-home-3x.webp 3x"
+									type="imag/webp">
+								<img src="img/about-home-1x.jpg" alt="woman" loading=”lazy”>
+							</picture>
+						</article>
+						<a class="link" href="#">More</a>
+					</div>
+				</section>
 
+				<section class="cosmetics cosmetics--margin">
+					<div class="cosmetics__container">
+						<h2 class="cosmetics__title">Cosmetics Info</h2>
+						<ul class="cosmetics__list list-cosmetics">
+							<li class="list-cosmetics__item">
+								<a class="list-cosmetics__link" href="#">Korean</a>
+							</li>
+							<li class="list-cosmetics__item">
+								<a class="list-cosmetics__link" href="#">Europian</a>
+							</li>
+							<li class="list-cosmetics__item">
+								<a class="list-cosmetics__link" href="#">American</a>
+							</li>
+						</ul>
+						<div class="cosmetics__cards cards">
+
+							<a class="cards__item item" href="#" target="_blank">
+								<figure>
+									<picture class="item__image">
+										<source srcset="img/serum-1x.webp 1x, img/img/serum-2x.webp 2x, img/img/serum-3x.webp 3x"
+											type="imag/webp">
+										<img src="img/serum-1x.jpg" alt="serum" loading=”lazy”>
+									</picture>
+									<figcaption class="item__text">Cosrx AC Collection Blemish Spot Clearing Serum</figcaption>
+								</figure>
+							</a>
+
+							<a class="cards__item item" href="#" target="_blank">
+								<figure>
+									<picture class="item__image">
+										<source srcset="img/emulsion-1x.webp 1x, img/emulsion-2x.webp 2x, img/emulsion-3x.webp 3x"
+											type="imag/webp">
+										<img src="img/emulsion-1x.jpg" alt="emulsion" loading=”lazy”>
+									</picture>
+									<figcaption class="item__text">CHI Luxury Black Seed Oil Dry Oil</figcaption>
+								</figure>
+							</a>
+
+							<a class="cards__item item" href="#" target="_blank">
+								<figure>
+									<picture class="item__image">
+										<source srcset="img/cream-1x.webp 1x, img/cream-2x.webp 2x, img/cream-3x.webp 3x"
+											type="imag/webp">
+										<img src="img/cream-1x.jpg" alt="cream" loading=”lazy”>
+									</picture>
+									<figcaption class="item__text">Heimish Bulgarian Rose Satin Cream</figcaption>
+								</figure>
+							</a>
+
+							<a class="cards__item item" href="#" target="_blank">
+								<figure>
+									<picture class="item__image">
+										<source
+											srcset="img/serum-la-roche-1x.webp 1x, img/serum-la-roche-2x.webp 2x, img/serum-la-roche-3x.webp 3x"
+											type="imag/webp">
+										<img src="img/serum-la-roche-1x.jpg" alt="serum" loading=”lazy”>
+									</picture>
+									<figcaption class="item__text">La Roche-Posay Hyalu B5 Serum</figcaption>
+								</figure>
+							</a>
+
+							<a class="cards__item item" href="#" target="_blank">
+								<figure>
+									<picture class="item__image">
+										<source
+											srcset="img/cream-lancome-1x.webp 1x, img/cream-lancome-2x.webp  2x, img/cream-lancome-3x.webp  3x"
+											type="imag/webp">
+										<img src="img/cream-lancome-1x.jpg" alt="cream" loading=”lazy”>
+									</picture>
+									<figcaption class="item__text">Lancome Genifique Youth Activating Day Cream
+									</figcaption>
+								</figure>
+							</a>
+
+							<a class="cards__item item" href="#" target="_blank">
+								<figure>
+									<picture class="item__image">
+										<source srcset="img/mask-1x.webp 1x, img/mask-2x.webp  2x, img/mask-3x.webp  3x"
+											type="imag/webp">
+										<img src="img/mask-1x.jpg" alt="mask" loading=”lazy”>
+									</picture>
+									<figcaption class="item__text">Dermalogica Daily Skin Health Charcoal Rescue Masque
+									</figcaption>
+								</figure>
+							</a>
+
+						</div>
+						<a class="link link--cosmetics" href="#">More</a>
+					</div>
+				</section>
 			</div>
 		</main>
-
-
 		<footer class=" footer">
 			<div class="footer__container">
+				<article class="footer__company company">
+					<h3 class="company__title">Company</h3>
+					<ul class="company__list list-company">
+						<li class="list-company__item">
+							<a class="list-company__link" href="#">Information</a>
+						</li>
+						<li class="list-company__item">
+							<a class="list-company__link" href="#">Contact</a>
+						</li>
+						<li class="list-company__item">
+							<a class="list-company__link" href="#">About</a>
+						</li>
+						<li class="list-company__item">
+							<a class="list-company__link" href="#">News</a>
+						</li>
+					</ul>
+				</article>
+
+				<article class="footer__location location">
+					<h3 class="location__title">Location</h3>
+					<address class="location__address">
+						<p>South Los Angeles</p>
+						<a href="tel:+1234567890">+1234567890</a>
+						<blockquote>We always ready speak with you!</blockquote>
+					</address>
+				</article>
+
+				<article class="footer__touch touch">
+					<h3 class="touch__title">Get in touch</h3>
+					<address class="touch__address">
+						<a href="infobao-contact@gmail.com">infobao-contact@gmail.com</a>
+					</address>
+					<ul class="touch__list list-touch">
+						<li class="list-touch__item">
+							<a class="list-touch__link" href="#">Instagtam</a>
+						</li>
+						<li class="list-touch__item">
+							<a class="list-touch__link" href="#">Facebook</a>
+						</li>
+						<li class="list-touch__item">
+							<a class="list-touch__link" href="#">Twitter</a>
+						</li>
+					</ul>
+				</article>
 
 			</div>
-
+			<article class="footer__basement basement">
+				<div class="basement__container">
+					<h2 class="basement__title">INFO BAO</h2>
+					<cite class="basement__produced">2021 ©infobao. All Rights Reserved.</cite>
+				</div>
+			</article>
 		</footer>
 	</div>
 	<script src="js/script.js"></script>
