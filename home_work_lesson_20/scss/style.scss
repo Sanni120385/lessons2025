@@ -8,6 +8,9 @@ body {
 $titleColor: #2f302c;
 $aboutColor: #000;
 $aboutWhite: #fff;
+$border1Color: #7e7f7c;
+$border2Color: #040404;
+$menuColor: #f6f6f6;
 %link{
 	font-size: 0.875rem;
 	color: $aboutColor;
@@ -296,10 +299,6 @@ gap: 0.9375rem;
 												}
 	}
 
-	// .header__menu
-
-	&__menu {}
-
 	// .header__action
 
 	&__action {
@@ -310,13 +309,11 @@ gap: 0.9375rem;
 	}
 }
 
-.header--margin {}
-
 .search-header {
 	display: flex;
-		border-bottom: 0.0625rem solid #7e7f7c;
+		border-bottom: 0.0625rem solid $border1Color;
 		&:hover{
-			border-bottom: 0.0625rem solid #040404;
+			border-bottom: 0.0625rem solid $border2Color;
 		}
 	// .search-header__button
 
@@ -340,7 +337,7 @@ gap: 0.9375rem;
 			}
 			&:hover{
 				&::placeholder{
-					color: black;
+					color: $aboutColor;
 				}
 			}
 	}
@@ -354,7 +351,7 @@ flex-grow: 1;
 			block-size: 100%;
 			inset-inline-start: 100%;
 			inset-block-start: 0;
-			background-color: #f6f6f6;
+			background-color: $menuColor;
 			z-index: 1;
 			padding: 7.5rem 0.9375rem 1.875rem 0.9375rem;
 			overflow: auto;
@@ -363,7 +360,7 @@ flex-grow: 1;
 &::before{
 	@media (width < 48em){
 		content: "";
-			background-color: #fff;
+			background-color: $aboutWhite;
 			position: fixed;
 			inline-size: 100%;
 			block-size: 4.375rem;
@@ -373,9 +370,6 @@ flex-grow: 1;
 			z-index: 2;
 	}
 }
-	// .menu__body
-
-	&__body {}
 
 	// .menu__list
 
@@ -397,15 +391,11 @@ flex-grow: 1;
 												}
 	}
 
-	// .menu__item
-
-	&__item {}
-
 	// .menu__link
 
 	&__link {
 			font-weight: 700;
-				color: #2f302c;
+				color: $titleColor;
 				line-height: 1.25;
 				font-size: 1rem;
 				@media (width < 48em){
@@ -435,15 +425,12 @@ display: flex;
 																@media (width < 30em){
 																	gap: 0.5rem 0.9375rem;
 																}
-	// .action-header__item
-
-	&__item {}
 
 	// .action-header__link
 
 	&__link {
 			font-weight: 700;
-				color: #2f302c;
+				color: $titleColor;
 				line-height: 1.25;
 				font-size: 1rem;
 				display: block;
@@ -489,7 +476,7 @@ display: flex;
 	.icon-menu{
 		 & span{
 			@media (width < 48em){
-							background-color: #2f302c;
+							background-color: $titleColor;
 							block-size: 0.125rem;
 							inline-size: 1.875rem;
 							position: absolute;
@@ -502,7 +489,7 @@ display: flex;
 		}
 		&::before{
 					content: "";
-						background-color: #2f302c;
+						background-color: $titleColor;
 						block-size: 0.125rem;
 						inline-size: 1.875rem;
 						position: absolute;
@@ -512,7 +499,7 @@ display: flex;
 		}
 				&::after {
 					content: "";
-					background-color: #2f302c;
+					background-color: $titleColor;
 					block-size: 0.125rem;
 					inline-size: 1.875rem;
 					position: absolute;

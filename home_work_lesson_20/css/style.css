@@ -458,19 +458,19 @@ body {
   }
 }
 .search-header__input:hover::-webkit-input-placeholder {
-  color: black;
+  color: #000;
 }
 .search-header__input:hover::-moz-placeholder {
-  color: black;
+  color: #000;
 }
 .search-header__input:hover:-ms-input-placeholder {
-  color: black;
+  color: #000;
 }
 .search-header__input:hover::-ms-input-placeholder {
-  color: black;
+  color: #000;
 }
 .search-header__input:hover::placeholder {
-  color: black;
+  color: #000;
 }
 
 .menu {
