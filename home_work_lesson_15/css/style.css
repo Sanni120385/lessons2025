@@ -17,6 +17,9 @@ body{
 	padding-block: 3.75rem;
 	
 }
+.header__logo{
+	flex-shrink: 0;
+}
 .header__container{
 	display: flex;
 	column-gap: 5rem;
@@ -35,6 +38,7 @@ body{
 	border-bottom: 1px solid #7e7f7c;
 	max-width: 16.5rem;
 	padding-left: 2rem;
+	flex-shrink: 0;
 }
 .blok-input-header__input:focus{
 	outline: none;
@@ -55,8 +59,9 @@ body{
 .header__list {
 	display: flex;
 		column-gap: 2.75rem;
-		
-		
+		flex-grow: 1;
+		flex-wrap: wrap;
+	row-gap: 0.9375rem;
 	
 }
 .header__link {
@@ -103,7 +108,26 @@ body{
 .selected-header__link:hover::after {
 	width: 100%;
 }
-@media (max-width: 876px) {
+@media (width <=1399px){
+.header__container {
+		column-gap: 2.5rem;
+		
+	}
+}
+@media (width <=54.8125rem) {
+	.header__container {
+		column-gap: 1.25rem;
+	}
+	.header__list{
+		row-gap: 0.625rem;
+		column-gap: 0.625rem;
+	}
+	.selected-header{
+		column-gap: 10px;
+		justify-items: center;
+	}
+}
+@media (width < 828px) {
 	.header {
 			padding-block: 1.875rem;
 	
@@ -194,7 +218,7 @@ line-height: 1;
 .hero__subtitle-two {
 	font-weight: 700;
 	line-height: 175%;
-	font-size: clamp(0.875rem, 4vw, 1.25rem);
+	font-size: clamp(1rem, 4vw, 1.25rem);
 	color: #2f302c;
 	margin-bottom: 1.25rem;
 }
@@ -202,7 +226,7 @@ line-height: 1;
 .hero__content p{
 font-weight: 500;
 line-height: 125%;
-font-size: clamp(0.75rem, 2.5vw, 1rem);
+font-size: 1rem;
 color: #7e7f7c;
 }
 @media (max-width: 1040px) {
@@ -224,8 +248,20 @@ color: #7e7f7c;
 		margin-right: auto;
 	}
 }
+@media (max-width: 56.875rem){
+.hero {
+		background: url(../img/rectangle.jpg) no-repeat left/cover;
+		padding: 7.125rem 0 6.875rem 0;
+		min-height: 38.25rem;
+		
+	}
+}
 @media (max-width: 335px) {
 	.hero__content{
 		padding: 0 10px;
 	}
+		
+				.hero__content p {
+					color: #4a4a4a;
+				}
 }
