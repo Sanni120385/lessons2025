@@ -485,18 +485,19 @@ display: flex;
 				block-size: 1.125rem;
 				flex-shrink: 0;
 	}
+}
 	.icon-menu{
-		 &span{
+		 & span{
 			@media (width < 48em){
-						content: "";
 							background-color: #2f302c;
 							block-size: 0.125rem;
 							inline-size: 1.875rem;
 							position: absolute;
 							inset-inline-end: 0;
 							transition: all 0.3s;
-							inset-block-end: 50%;
+							inset-block-start: 50%;
 								translate: 0 -50%;
+								
 			}
 		}
 		&::before{
@@ -520,30 +521,36 @@ display: flex;
 					inset-block-end: 0;
 				}
 	}
-}
+
 [data-menu-open]{
-	.icon-menu span{
+	.icon-menu{
+	 & span{
 		@media (width < 48em){
 			inline-size: 0;
 		}
 	}
+	}
 }
 [data-menu-open]{
-	.icon-menu::before{
+	.icon-menu{
+	&::before{
 		@media (width < 48em){
 rotate: -45deg;
 	translate: 0 -50%;
 	inset-block-start: 50%;
 		}
 	}
+	}
 }
 [data-menu-open] {
-	.icon-menu::after {
+	.icon-menu{
+	&::after {
 		@media (width < 48em) {
 			rotate: 45deg;
 			translate: 0 50%;
 			inset-block-start: 50%;
 		}
+	}
 	}
 }
 [data-menu-open]{
@@ -582,9 +589,11 @@ rotate: -45deg;
 	}
 }
 [data-menu-open]{
-	.menu::before{
+	.menu{
+	&::before{
 @media (width < 48em) {
 		inset-inline-start: 0;
+	}
 	}
 	}
 }

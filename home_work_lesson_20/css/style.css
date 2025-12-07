@@ -629,9 +629,9 @@ body {
         flex-shrink: 0;
   }
 }
+
 @media (width < 48em) {
-  .icon-menu .icon-menuspan {
-    content: "";
+  .icon-menu span {
     background-color: #2f302c;
     block-size: 0.125rem;
     inline-size: 1.875rem;
@@ -639,11 +639,11 @@ body {
     inset-inline-end: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    inset-block-end: 50%;
+    inset-block-start: 50%;
     translate: 0 -50%;
   }
 }
-.icon-menu .icon-menu::before {
+.icon-menu::before {
   content: "";
   background-color: #2f302c;
   block-size: 0.125rem;
@@ -654,7 +654,7 @@ body {
   transition: all 0.3s;
   inset-block-start: 0;
 }
-.icon-menu .icon-menu::after {
+.icon-menu::after {
   content: "";
   background-color: #2f302c;
   block-size: 0.125rem;
