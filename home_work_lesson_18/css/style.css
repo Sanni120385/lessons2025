@@ -7,11 +7,11 @@ body{
 	font-family: Montserrat, sens-serif;
 	position: relative;
 }
-[class*="__container"]{
+/* [class*="__container"]{
 	max-width: 76.9375rem;
 	padding-inline: 0.9375rem;
 		margin: 0 auto;
-}
+} */
 .header--margin {
 	padding-top: 2rem;
 	margin-bottom: 6.4375rem;
@@ -26,6 +26,9 @@ body{
 	align-items: center;
 	gap: 7.3125rem;
 	justify-content: space-between;
+	max-width: 76.9375rem;
+		padding-inline: 0.9375rem;
+		margin: 0 auto;
 }
 
 .header__logo {
@@ -42,16 +45,32 @@ body{
 		gap: 3.8125rem;
 		flex-wrap: wrap;
 		max-width: 39.4375rem;
+		
 }
 .menu__link {
 	color: #343434;
 	font-size: clamp(0.75rem, 4vw, 1rem);
 	white-space: nowrap;
 	display: block;
+	transition: all 0.3s;
 }
+
+.menu__link::after{
+	content: "";
+	inline-size: 0;
+	block-size: 0.125rem;
+	background-color: #BA936F;
+	display: block;
+	margin-block-start: 3px;
+	transition: all 0.8s;
+}
+
+.menu__link:hover::after{
+	width: 100%;
+}
+
 .action-header__link {
 	background-color: #BA936F;
-	max-width: 10.375rem;
 	border-radius: 0.9375rem;
 	color: #fff;
 	font-weight: 500;
@@ -59,11 +78,18 @@ body{
 	padding-inline: 2.9375rem;
 	padding-block: 0.75rem;
 	white-space: nowrap;
-	display: block;
+	display: inline-block;
+	transition: all 0.3s;
 }
 .menu__item--action{
 	display: none;
 	
+}
+.menu__item--action:hover{
+	box-shadow: 0 0 0.3125rem 0.3125rem #705943;
+}
+.menu__item--action:hover .menu__link{
+	color: #343434;
 }
 .icon-menu{
 	display: none;
@@ -72,9 +98,6 @@ body{
 	box-shadow: 0 0 0.3125rem 0.3125rem #705943;
 }
 .menu__link:hover{
-	text-decoration: underline;
-	text-underline-offset: 0.3125rem;
-	text-decoration-thickness: 0.125rem;
 	color: #BA936F;
 }
 @media(width <= 73.75rem){
@@ -102,6 +125,7 @@ body{
 		row-gap: 0.625rem;
 	}
 }
+/* --------------------------- меню бургер-------------------------- */
 		@media(width <= 33.75rem){
 				.icon-menu,
 				.header__action,
@@ -201,15 +225,20 @@ body{
 				[data-menu-open] .menu::before {
 					left: 0;
 				}
+				/* ----------------Щоб не було скролу при відкритому менюбургер-------------------------- */
+								[data-menu-open] body {
+									overflow: hidden;
+								}
 }
+/* ------------------------------------ конец меню бургер----------------------------------- */
 @media(width <=24.375rem){
 .header__action{
 	display: none;
 }
 .menu__item--action{
-	display: block;
-	background-color: #BA936F;
-		max-width: 10.375rem;
+	display: inline-block;
+		background-color: #BA936F;
+		/* max-width: 166px; */
 		border-radius: 0.9375rem;
 		font-weight: 500;
 		font-size: 1.0625rem;
@@ -219,16 +248,22 @@ body{
 }
 .menu__item--action a{
 	color: #fff;
+	
 }
 }
 
-.hero {
+.hero__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 11.0625rem;
+	max-width: 76.9375rem;
+		padding-inline: 0.9375rem;
+		margin: 0 auto;
+		gap: 0.9375rem;
 }
-
+.hero--margin{
+margin-bottom: 11.0625rem;
+}
 .hero__content {
 	max-width: 43.0625rem;
 }
@@ -258,16 +293,20 @@ line-height: 1.6875rem;
 font-size: 1.0625rem;
 color: #343434;
 margin-left: 4rem;
-
+transition: all 0.3s;
 }
 .link-hero__arrow{
 	vertical-align: middle;
 	width: 1.5625rem;
 	aspect-ratio: 1;
+	transition: all 0.3s;
 }
 .link-hero:hover .link-hero__arrow{
 	scale: 1.2;
 	translate: 0.4375rem 0;
+}
+.link-hero:hover span{
+	color: #BA936F;
 }
 .link-hero__circle{
 	vertical-align: middle;
@@ -356,7 +395,7 @@ margin-left: 4rem;
 	}
 }
 @media(width < 42.375rem){
-	.hero{
+	.hero__container{
 		flex-direction: column;
 		gap: 2.5rem;
 	}
@@ -375,7 +414,7 @@ margin-left: 4rem;
 	.hero__content p{
 		display: none;
 	}
-	.hero{
+	.hero__container{
 		position: relative;
 		z-index: 1;
 		gap: 0;
@@ -396,11 +435,14 @@ margin-left: 4rem;
 	left: 25%;
 }
 }
-.section-practice {
+.section-practice__container {
+	max-width: 76.9375rem;
+		padding-inline: 0.9375rem;
+		margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
+	gap: 0.9375rem;
 }
 .section-practice--margin{
 margin-bottom: 8.125rem;
@@ -448,8 +490,7 @@ margin-bottom: 8.125rem;
 	margin-bottom: 2.6875rem;
 }
 .section-practice__link {
-	display: block;
-	max-width: 200px;
+	display: inline-block;
 	border-radius: 15px;
 	background-color: #BA936F;
 	color: #fff;
@@ -457,6 +498,8 @@ margin-bottom: 8.125rem;
 	font-size: 1.0625rem;
 	text-align: center;
 	padding-block: 0.75rem;
+	padding-inline: 2.9375rem;
+	transition: all 0.3s;
 }
 .section-practice__link:hover {
 	box-shadow: 0 0 0.3125rem 0.3125rem #705943;
@@ -473,7 +516,7 @@ margin-bottom: 8.125rem;
 	aspect-ratio: 185 / 345;
 }
 @media(width <=75rem){
-	.section-practice{
+	.section-practice__container{
 		gap: 0.9375rem;
 	}
 }
@@ -503,7 +546,7 @@ margin-bottom: 8.125rem;
 		}
 }
 @media(width < 48rem){
-	.section-practice{
+	.section-practice__container{
 		flex-direction: column-reverse;
 		gap: 2.5rem;
 	}
@@ -518,7 +561,11 @@ margin-bottom: 8.125rem;
 .section-lessons--margin {
 	margin-bottom: 8.625rem;
 }
-
+.section-lessons__container{
+	max-width: 76.9375rem;
+		padding-inline: 0.9375rem;
+		margin: 0 auto;
+}
 .section-lessons__info {
 	margin-bottom: 4rem;
 }
@@ -541,8 +588,15 @@ margin-bottom: 8.125rem;
 .section-lessons__cards {
 	display: flex;
 	justify-content: space-between;
-	
 	gap: 1.875rem;
+	transition: all 0.3s;
+}
+.section-lessons__card{
+	flex-basis: 362 / 519;
+
+}
+.section-lessons__card:nth-child(even){
+	flex-basis: 368 / 412;
 }
 .section-lessons__card:hover figcaption{
 	text-decoration: underline;
@@ -570,6 +624,21 @@ picture img{
 	object-fit: cover;
 	border-radius: 2.0625rem;
 	margin-bottom: 0.875rem;
+	aspect-ratio: 385 / 477;
+}
+.section-lessons__card--smal picture img{
+	width: 100%;
+		object-fit: cover;
+		border-radius: 2.0625rem;
+		margin-bottom: 0.875rem;
+		aspect-ratio: 368 / 368;
+}
+.section-lessons__card--middele picture img{
+		width: 100%;
+			object-fit: cover;
+			border-radius: 2.0625rem;
+			margin-bottom: 0.875rem;
+			aspect-ratio: 362 / 477;
 }
 @media(width <=62.375rem){
 	.section-lessons--margin {
@@ -594,6 +663,11 @@ picture img{
 .section-lessons--margin {
 	margin-bottom: 4.3125rem;
 }
+}
+.schedule__container{
+	max-width: 76.9375rem;
+		padding-inline: 0.9375rem;
+		margin: 0 auto;
 }
 .schedule__background-left{
 	position: absolute;
@@ -637,11 +711,11 @@ table{
 	max-width: 41.125rem;
 	width: 100%;
 }
+
 tr{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-text-align: left;
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+gap: 15px;
 }
 tr:not(:last-child) {
 	border-bottom: 0.0625rem solid #343434;
@@ -698,7 +772,8 @@ td img{
 }
 @media(width <=36.875rem){
 tr{
-flex-direction: column;
+grid-template-columns: 1fr;
+justify-items: center;
 background-color: #BA936F;
 }
 td{
@@ -722,6 +797,9 @@ td{
 	align-items: flex-start;
 	gap: 12.6875rem;
 	margin-bottom: 6.625rem;
+	max-width: 76.9375rem;
+		padding-inline: 0.9375rem;
+		margin: 0 auto;
 }
 .contacts-footer {
 	flex-basis: 16.25rem;
@@ -755,6 +833,7 @@ td{
 }
 .action-contacts-footer__link {
 	max-width: 1.5625rem;
+	transition: all 0.3s;
 }
 .action-contacts-footer__link:hover{
 	scale: 1.2;
