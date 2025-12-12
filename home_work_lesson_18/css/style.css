@@ -590,6 +590,7 @@ margin-bottom: 8.125rem;
 	justify-content: space-between;
 	gap: 1.875rem;
 	transition: all 0.3s;
+	align-items: flex-start;
 }
 .section-lessons__card{
 	flex-basis: 362 / 519;
