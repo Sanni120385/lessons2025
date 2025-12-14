@@ -241,6 +241,9 @@ border-color: var(--colorGray);
 	[data-menu-open] .menu::before {
 		inset-inline-start: 0;
 	}
+		[data-menu-open] body {
+			overflow: hidden;
+		}
 }
 
 .main--margin {
