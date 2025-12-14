@@ -32,6 +32,7 @@ body{
 	justify-content: space-between;
 	margin-block-end: 7rem;
 	align-items: end;
+	gap: 0.625rem;
 }
 
 
@@ -84,7 +85,9 @@ body{
 .content-header__container{
 	max-inline-size: 60.1875rem;
 	padding-inline: 0.9375rem;
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 }
 .content-header__title {
@@ -107,11 +110,10 @@ body{
 	font-size: clamp(0.625rem, 2.5vw, 0.8125rem);
 	color: var(--colorWhite);
 	border: 0.125rem solid var(--colorWhite);
-	max-inline-size: 8.375rem;
 	padding-inline: 0.8125rem;
 	padding-block: 0.625rem;
 	text-align: center;
-	display: block;
+	display: inline-block;
 	margin-inline: auto;
 	transition: all 0.3s;
 }
