@@ -14,32 +14,32 @@
 
 // Відповідь:
 
-// const bodyElement = document.body
-// console.log(bodyElement)
+const bodyElement = document.body
+console.log(bodyElement)
 
 
 // Задача #2
 
 // Відповідь:
 
-// function createList(listItem = 5) {
-// 	if (typeof listItem !== `number` || listItem <= 0 || Number.isInteger(listItem)) {
-// 		console.log(`Кількість елементів має бути більше 0, має бути числом`)
-// 		return
-// 	}
-// 	const ul = document.createElement(`ul`)
-// 	for (let i = 0; i < listItem; i++) {
-// 		const li = document.createElement(`li`)
-// 		li.textContent = `Елемент ${i + 1}`
-// 		ul.appendChild(li)
-// 	}
-// 	document.body.appendChild(ul)
-// }
-// createList()
-// createList("text")
-// createList(3)
-// createList(10)
-// createList(-6)
+function createList(listItem = 5) {
+	if (typeof listItem !== `number` || listItem <= 0 || Number.isInteger(listItem)) {
+		console.log(`Кількість елементів має бути більше 0, має бути числом`)
+		return
+	}
+	const ul = document.createElement(`ul`)
+	for (let i = 0; i < listItem; i++) {
+		const li = document.createElement(`li`)
+		li.textContent = `Елемент ${i + 1}`
+		ul.appendChild(li)
+	}
+	document.body.appendChild(ul)
+}
+createList()
+createList("text")
+createList(3)
+createList(10)
+createList(-6)
 
 
 // Задача #3
